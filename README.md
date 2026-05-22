@@ -66,3 +66,22 @@ Módulo para calcular el precio final de productos aplicando descuentos e IVA.
 | TC-09 | R3 | Precio final aplica descuento e IVA en orden correcto | Producto precio=1000, descuento=10 % aplicado | Ninguno adicional | Llamar calcular_precio_final() | (1000 × 0.90) × 1.19 = 1071.00 | Positivo |
 | TC-10 | R3 | Sin descuento el precio final es solo precio base más IVA | Producto precio=1000, descuento=0 % aplicado | Ninguno adicional | Llamar calcular_precio_final() | 1000 × 1.19 = 1190.00 | Positivo |
 
+---
+
+## Reporte de cobertura
+
+```
+Name                       Stmts   Miss  Cover   Missing
+--------------------------------------------------------
+src\__init__.py                0      0   100%
+src\libreria\__init__.py       0      0   100%
+src\libreria\producto.py      28      1    96%   23
+--------------------------------------------------------
+TOTAL                         28      1    96%
+
+19 passed, 13 warnings in 0.09s
+```
+
+Cobertura total: **96%** (supera el mínimo requerido del 80%).
+
+
