@@ -16,6 +16,15 @@ dev = [
 testpaths = ["tests"]
 addopts = "--tb=short"
 pythonpath = ["src"]
+markers = [
+    "regla1: escenarios de la regla 1",
+    "regla2: escenarios de la regla 2",
+    "regla3: escenarios de la regla 3",
+    "borde: casos de valor limite",
+    "error: casos que esperan un error",
+    "outline: escenario parametrizado",
+    "positivo: casos del camino feliz",
+]
 
 [tool.coverage.run]
 source = ["src"]
